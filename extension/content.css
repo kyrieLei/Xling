@@ -1,0 +1,60 @@
+
+.transtype-overlay {
+  position: absolute;
+  z-index: 2147483647;
+  background: #ffffff;
+  color: #0f172a;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 13px;
+  border-radius: 14px;
+  padding: 10px 14px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.18);
+  max-width: 360px;
+  transition: opacity 120ms ease-in-out, transform 150ms ease;
+}
+
+.transtype-overlay.transtype-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(4px);
+}
+
+.transtype-header {
+  font-weight: 700;
+  margin-bottom: 6px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  color: #6d28d9;
+}
+
+.transtype-translation {
+  margin-bottom: 6px;
+  white-space: pre-wrap;
+}
+
+.transtype-hint {
+  font-size: 11px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.transtype-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #7c3aed, #2563eb);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 6px 20px rgba(79, 70, 229, 0.25);
+}
+
+.transtype-cta.hidden {
+  display: none;
+}

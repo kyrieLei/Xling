@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Xling</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        margin: 12px;
+        color: #111827;
+        width: 320px;
+      }
+      h1 {
+        margin: 0 0 6px;
+        font-size: 16px;
+      }
+      p, li {
+        font-size: 13px;
+        line-height: 1.4;
+      }
+      ul {
+        padding-left: 18px;
+        margin: 6px 0 0;
+      }
+      code {
+        background: #e5e7eb;
+        padding: 2px 4px;
+        border-radius: 4px;
+      }
+      .status {
+        margin: 8px 0;
+        font-size: 13px;
+        color: #dc2626;
+      }
+      button {
+        margin-top: 8px;
+        background: #2563eb;
+        color: #fff;
+        border: none;
+        border-radius: 999px;
+        padding: 6px 14px;
+        cursor: pointer;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Xling</h1>
+    <p>
+      Type anywhere and the DeepSeek-powered assistant can translate or polish your latest text segment.
+    </p>
+    <ul>
+      <li>Press <code>Cmd + Shift + Space</code> (macOS) or <code>Ctrl + Shift + Space</code> (Win/Linux) or click <code>Insert suggestion</code> in the overlay to accept.</li>
+      <li>Works on standard inputs and textareas.</li>
+      <li>Customize target language, tone, and system prompt in settings.</li>
+    </ul>
+    <p id="status" class="status"></p>
+    <button id="open-options" type="button">Open settings</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
